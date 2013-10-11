@@ -1,16 +1,9 @@
-require 'bundler'
-Bundler.setup :default
-require 'sinatra/base'
-require 'sprockets'
-require './app'
+require 'rubygems'
+require 'bundler/setup'
+Bundler.require
 
-map '/assets' do
-  environment = Sprockets::Environment.new
-  environment.append_path 'assets/javascripts'
-  environment.append_path 'assets/stylesheets'
-  run environment
-end
+root_dir = File.dirname(__FILE__)
+app_file = File.join(root_dir, 'app.rb')
+require app_file
 
-map '/' do
-  run Sinatra::Application
-end
+run App
