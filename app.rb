@@ -1,7 +1,6 @@
 require 'rubygems'
 require 'sinatra/base'
 require 'haml'
-require 'pony'
 
 class App < Sinatra::Base
   set :root, File.dirname(__FILE__)
