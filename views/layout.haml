@@ -1,56 +1,220 @@
 !!!
-/[if IEMobile 7 ] <html class="no-js iem7">
-/ [if (gt IEMobile 7)|!(IEMobile)]><!
-%html.no-js
-  / <![endif]
+/
+  Telephasic 1.0 by HTML5 UP
+  html5up.net | @n33co
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+%html
   %head
-    %meta{charset: "utf-8"}/
-    %title
+    %title Telephasic by HTML5 UP
+    %meta{content: "text/html; charset=US-ASCII", "http-equiv" => "content-type"}/
     %meta{content: "", name: "description"}/
-    %meta{content: "True", name: "HandheldFriendly"}/
-    %meta{content: "320", name: "MobileOptimized"}/
-    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
-    %meta{content: "on", "http-equiv" => "cleartype"}/
-    %link{href: "img/touch/apple-touch-icon-144x144-precomposed.png", rel: "apple-touch-icon-precomposed", sizes: "144x144"}/
-    %link{href: "img/touch/apple-touch-icon-114x114-precomposed.png", rel: "apple-touch-icon-precomposed", sizes: "114x114"}/
-    %link{href: "img/touch/apple-touch-icon-72x72-precomposed.png", rel: "apple-touch-icon-precomposed", sizes: "72x72"}/
-    %link{href: "img/touch/apple-touch-icon-57x57-precomposed.png", rel: "apple-touch-icon-precomposed"}/
-    %link{href: "img/touch/apple-touch-icon.png", rel: "shortcut icon"}/
-    / Tile icon for Win8 (144x144 + tile color)
-    %meta{content: "img/touch/apple-touch-icon-144x144-precomposed.png", name: "msapplication-TileImage"}/
-    %meta{content: "#222222", name: "msapplication-TileColor"}/
-    = css :cssapp
-    / For iOS web apps. Delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94
-    /
-      <meta name="apple-mobile-web-app-capable" content="yes">
-      <meta name="apple-mobile-web-app-status-bar-style" content="black">
-      <meta name="apple-mobile-web-app-title" content="">
-
-    / This script prevents links from opening in Mobile Safari. https://gist.github.com/1042026
-    /
-      <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
-  %header
-    .logo
-      %h1
-        A fine site 
-    %nav
-      %ul
-        %li.active
-          %a{href: "#"} home
-        %li
-          %a{href: "#"} portfolio
-        %li
-          %a{href: "#"} blog
-        %li
-          %a{href: "#"} contact
-  / /#banner
+    %meta{content: "", name: "keywords"}/
+    %link{href: "http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600", rel: "stylesheet", type: "text/css"}/
+    /[if lte IE 8] <script src="js/html5shiv.js"></script>
+    %script{src: "js/jquery.min.js"}
+    %script{src: "js/jquery.dropotron.js"}
+    %script{src: "js/skel.min.js"}
+    %script{src: "js/skel-panels.min.js"}
+    %script{src: "js/init.js"}
   %body
-    .main
-      = yield
-      = js :jsapp
-    / Google Analytics: change UA-XXXXX-X to be your site's ID.
-    :javascript
-      var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
-      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-      g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
-      s.parentNode.insertBefore(g,s)}(document,"script"));
+    %noscript
+      %link{href: "css/skel-noscript.css", rel: "stylesheet"}/
+      %link{href: "css/style.css", rel: "stylesheet"}/
+      %link{href: "css/style-n1.css", rel: "stylesheet"}/
+    / Header Wrapper
+    #header-wrapper
+      / Header
+      #header.container
+        / Logo
+        %h1#logo
+          %a{href: "index.html"} Ensemble Solutions
+        / Nav
+        %nav#nav
+          %ul
+            %li
+              %a{href: ""} Dropdown
+              %ul
+                %li
+                  %a{href: "#"} Lorem ipsum dolor
+                %li
+                  %a{href: "#"} Magna phasellus
+                %li
+                  %a{href: "#"} Etiam dolore nisl
+                %li
+                  %span Phasellus consequat
+                  %ul
+                    %li
+                      %a{href: "#"} Lorem ipsum dolor
+                    %li
+                      %a{href: "#"} Phasellus consequat
+                    %li
+                      %a{href: "#"} Magna phasellus
+                    %li
+                      %a{href: "#"} Etiam dolore nisl
+                %li
+                  %a{href: "#"} Veroeros feugiat
+            %li
+              %a{href: "left-sidebar.html"} Left Sidebar
+            %li.break
+              %a{href: "right-sidebar.html"} Right Sidebar
+            %li
+              %a{href: "no-sidebar.html"} No Sidebar
+      / Hero
+      %section#hero.container
+        %header
+          %h2
+            Telephasic is a responsive
+            %br/
+            site template by
+            %a{href: "http://html5up.net/"} HTML5 UP
+        %p
+          Designed and built on
+          %a{href: "http://skeljs.org"} skelJS
+          by
+          = succeed "." do
+            %a{href: "http://n33.co"} AJ
+          %br/
+          the
+          = succeed "." do
+            %a{href: "http://html5up.net/license/"} Creative Commons Attribution 3.0 license
+        %ul.actions
+          %li
+            %a.button{href: "#"} Get this party started
+    / Features 1
+    .wrapper
+      .container
+        .row
+          %section.6u.feature
+            .image-wrapper.first
+              %a.image.full.first{href: "http://ineedchemicalx.deviantart.com/art/Mind-is-a-clear-stage-375431607"}
+                %img{alt: "", src: "images/pic01.jpg"}/
+            %header
+              %h2
+                Semper magna neque vel
+                %br/
+                adipiscing curabitur
+            %p
+              Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel
+              sem sit dolor neque semper magna. Lorem ipsum dolor sit amet consectetur et sed
+              adipiscing elit. Curabitur vel sem sit.
+            %ul.actions
+              %li
+                %a.button{href: "#"} Elevate my awareness
+          %section.6u.feature
+            .image-wrapper
+              %a.image.full{href: "http://ineedchemicalx.deviantart.com/art/Freebird-378379295"}
+                %img{alt: "", src: "images/pic02.jpg"}/
+            %header
+              %h2
+                Amet lorem ipsum dolor
+                %br/
+                sit consequat magna
+            %p
+              Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel
+              sem sit dolor neque semper magna. Lorem ipsum dolor sit amet consectetur et sed
+              adipiscing elit. Curabitur vel sem sit.
+            %ul.actions
+              %li
+                %a.button{href: "#"} Elevate my awareness
+    / Promo
+    #promo-wrapper
+      %section#promo
+        %h2 Neque semper magna et lorem ipsum adipiscing
+        %a.button{href: "http://ineedchemicalx.deviantart.com/art/A-breath-of-Hope-366359145"} Breach the thresholds
+    / Features 2
+    .wrapper
+      %section.container
+        %header.major
+          %h2 Sed magna consequat lorem curabitur tempus
+          %span Elit aliquam vulputate egestas euismod nunc semper vehicula lorem blandit
+        .row.features
+          %section.4u.feature
+            .image-wrapper.first
+              %a.image.full{href: "http://ineedchemicalx.deviantart.com/art/Time-goes-by-too-fast-335982438"}
+                %img{alt: "", src: "images/pic03.jpg"}/
+            %p
+              Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
+              vel sem sit dolor neque semper magna lorem ipsum.
+          %section.4u.feature
+            .image-wrapper
+              %a.image.full{href: "http://ineedchemicalx.deviantart.com/art/Kingdom-of-the-Wind-348268044"}
+                %img{alt: "", src: "images/pic04.jpg"}/
+            %p
+              Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
+              vel sem sit dolor neque semper magna lorem ipsum.
+          %section.4u.feature
+            .image-wrapper
+              %a.image.full{href: "http://ineedchemicalx.deviantart.com/art/Elysium-355393900"}
+                %img{alt: "", src: "images/pic05.jpg"}/
+            %p
+              Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
+              vel sem sit dolor neque semper magna lorem ipsum.
+        %ul.actions.major
+          %li
+            %a.button{href: "#"} Elevate my awareness
+    / Footer Wrapper
+    #footer-wrapper
+      / Footer
+      #footer.container
+        %header.major
+          %h2 Euismod aliquam vehicula lorem
+          %span
+            Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel sem sit
+            %br/
+            dolor neque semper magna lorem ipsum feugiat veroeros lorem ipsum dolore.
+        .row
+          %section.6u
+            %form{action: "#", method: "post"}
+              .row.half
+                .6u
+                  %input.text{name: "name", placeholder: "Name", type: "text"}/
+                .6u
+                  %input.text{name: "email", placeholder: "Email", type: "text"}/
+              .row.half
+                .12u
+                  %textarea{name: "message", placeholder: "Message"}
+              .row.half
+                .12u
+                  %ul.actions
+                    %li
+                      %a.button{href: "#"} Send Message
+                    %li
+                      %a.button{href: "#"} Clear Form
+          %section.6u
+            .row.no-collapse-1
+              %ul.divided.icons.6u
+                %li.icon.icon-twitter
+                  %a{href: "#"}
+                    %span.extra> twitter.com/
+                    untitled
+                %li.icon.icon-facebook
+                  %a{href: "#"}
+                    %span.extra> facebook.com/
+                    untitled
+                %li.icon.icon-dribbble
+                  %a{href: "#"}
+                    %span.extra> dribbble.com/
+                    untitled
+              %ul.divided.icons.6u
+                %li.icon.icon-linkedin
+                  %a{href: "#"}
+                    %span.extra> linkedin.com/
+                    untitled
+                %li.icon.icon-youtube
+                  %a{href: "#"}
+                    %span.extra> youtube.com/
+                    untitled
+                %li.icon.icon-pinterest
+                  %a{href: "#"}
+                    %span.extra> pinterest.com/
+                    untitled
+      / Copyright
+      #copyright.container
+        %ul.menu
+          %li © Untitled. All rights reserved.
+          %li
+            Demo images:
+            %a{href: "http://ineedchemicalx.deviantart.com/"} Felicia Simion
+          %li
+            Design:
+            %a{href: "http://html5up.net/"} HTML5 UP
