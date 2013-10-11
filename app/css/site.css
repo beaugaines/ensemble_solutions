@@ -1,0 +1,38 @@
+header {
+  position:relative;
+  padding-top:0px;
+  margin-left: auto ;
+  margin-right: auto ;
+  height: 4em;
+  background: #eee;
+}
+
+header .logo {
+  float: left;
+}
+
+header nav {
+  float: right;
+  display: inline-block;
+  vertical-align:top;
+  padding:0px;
+  height:20px;
+}
+
+nav ul {
+  margin:0;
+  display: inline;
+  padding:0;
+  list-style:none;
+}
+
+nav li {
+  display:inline;
+  margin:0;
+  padding:0;
+}
+
+nav li a {
+  text-decoration: none;
+  padding: 0 0.2em;
+}
