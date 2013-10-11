@@ -24,8 +24,8 @@ class App < Sinatra::Base
       '/js/*/*.js'
     ]
 
-    css_compression :simple
-    js_compression :simple
+    css_compression :sqwish
+    js_compression :jsmin
   end
 
   get '/' do
