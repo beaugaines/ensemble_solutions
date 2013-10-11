@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'sinatra/base'
 require 'sinatra/assetpack'
-require 'slim'
+require 'haml'
 
 class SinatraMicrosite < Sinatra::Base
   set :root, File.dirname(__FILE__)
@@ -20,7 +20,7 @@ class SinatraMicrosite < Sinatra::Base
     ]
 
     js :jsapp, [
-      '/js/*.js'
+      '/js/*.js',
       '/js/*/*.js'
     ]
 
@@ -29,7 +29,7 @@ class SinatraMicrosite < Sinatra::Base
   end
 
   get '/' do
-    'Yo mundo'
+    haml :index
   end
 
 run! if app_file == $0

@@ -1,0 +1,41 @@
+!!!
+/[if IEMobile 7 ] <html class="no-js iem7">
+/ [if (gt IEMobile 7)|!(IEMobile)]><!
+%html.no-js
+  / <![endif]
+  %head
+    %meta{charset: "utf-8"}/
+    %title
+    %meta{content: "", name: "description"}/
+    %meta{content: "True", name: "HandheldFriendly"}/
+    %meta{content: "320", name: "MobileOptimized"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    %meta{content: "on", "http-equiv" => "cleartype"}/
+    %link{href: "img/touch/apple-touch-icon-144x144-precomposed.png", rel: "apple-touch-icon-precomposed", sizes: "144x144"}/
+    %link{href: "img/touch/apple-touch-icon-114x114-precomposed.png", rel: "apple-touch-icon-precomposed", sizes: "114x114"}/
+    %link{href: "img/touch/apple-touch-icon-72x72-precomposed.png", rel: "apple-touch-icon-precomposed", sizes: "72x72"}/
+    %link{href: "img/touch/apple-touch-icon-57x57-precomposed.png", rel: "apple-touch-icon-precomposed"}/
+    %link{href: "img/touch/apple-touch-icon.png", rel: "shortcut icon"}/
+    / Tile icon for Win8 (144x144 + tile color)
+    %meta{content: "img/touch/apple-touch-icon-144x144-precomposed.png", name: "msapplication-TileImage"}/
+    %meta{content: "#222222", name: "msapplication-TileColor"}/
+    = css :cssapp
+    / For iOS web apps. Delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94
+    /
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <meta name="apple-mobile-web-app-title" content="">
+
+    / This script prevents links from opening in Mobile Safari. https://gist.github.com/1042026
+    /
+      <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
+  %body
+    .main
+      = yield
+      = js :jsapp
+    / Google Analytics: change UA-XXXXX-X to be your site's ID.
+    :javascript
+      var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+      g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+      s.parentNode.insertBefore(g,s)}(document,"script"));
