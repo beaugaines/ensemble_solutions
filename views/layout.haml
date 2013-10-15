@@ -24,7 +24,6 @@
         / Logo
         %h1#logo
           %a{href: "index.html"} Ensemble Solutions
-        / Nav
         / %nav#nav
         /   %ul
         /     %li
@@ -50,9 +49,9 @@
         /         %li
         /           %a{href: "#"} Veroeros feugiat
         /     %li
-        /       %a{href: "left-sidebar.html"} About
+        /       %a{href: "#about"} About
         /     %li.break
-        /       %a{href: "right-sidebar.html"} Contact
+        /       %a{href: "#contact"} Contact
         /     %li
         /       %a{href: "no-sidebar.html"} Projects
       = yield
@@ -60,13 +59,14 @@
     / Footer Wrapper
     #footer-wrapper
       / Footer
-      #footer.container
+      #footer.container#contact
+
         %header.major
-          %h2 Euismod aliquam vehicula lorem
+          %h2 We would love to hear from you
           %span
-            Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur vel sem sit
+            Please share any ideas you have for how we can work harder and smarter -
             %br/
-            dolor neque semper magna lorem ipsum feugiat veroeros lorem ipsum dolore.
+            to build Africa and Cameroon's prospects together! 
         .row
           %section.6u
             %form{action: "#", method: "post"}
@@ -91,35 +91,18 @@
                 %li.icon.icon-twitter
                   %a{href: "#"}
                     %span.extra> twitter.com/
-                    untitled
+                    ensemblesolutions
                 %li.icon.icon-facebook
                   %a{href: "#"}
                     %span.extra> facebook.com/
-                    untitled
-                %li.icon.icon-dribbble
-                  %a{href: "#"}
-                    %span.extra> dribbble.com/
-                    untitled
-              %ul.divided.icons.6u
-                %li.icon.icon-linkedin
-                  %a{href: "#"}
-                    %span.extra> linkedin.com/
-                    untitled
-                %li.icon.icon-youtube
-                  %a{href: "#"}
-                    %span.extra> youtube.com/
-                    untitled
-                %li.icon.icon-pinterest
-                  %a{href: "#"}
-                    %span.extra> pinterest.com/
-                    untitled
+                    ensemblesolutions
       / Copyright
       #copyright.container
         %ul.menu
           %li © Ensemble Solutions. All rights reserved.
           %li
-            Demo images:
-            %a{href: "http://ineedchemicalx.deviantart.com/"} Felicia Simion
+            Developed by
+            %a{href: "http://www.beaugain.es"} Charlie Gaines
           %li
             Styles from
             %a{href: "http://html5up.net/"} HTML5 UP
