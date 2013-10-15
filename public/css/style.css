@@ -906,13 +906,13 @@
 	#header-wrapper
 	{
 		position: relative;
-		background: #31AE29;
+		background: #f08c89;
 		background-image: url('images/header.svg');
-		background-image: url('images/header.svg'), -moz-linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
-		background-image: url('images/header.svg'), -webkit-linear-gradient(75deg, #31AE29 15%, #F2B69D 55%);
-		background-image: url('images/header.svg'), -o-linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
-		background-image: url('images/header.svg'), -ms-linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
-		background-image: url('images/header.svg'), linear-gradient(75deg, #FF7088 15%, #F2B69D 55%);
+		background-image: url('images/header.svg'), -moz-linear-gradient(75deg, #2648BE 15%, #5B70B8 55%);
+		background-image: url('images/header.svg'), -webkit-linear-gradient(75deg, #2648BE 15%, #5B70B8 55%);
+		background-image: url('images/header.svg'), -o-linear-gradient(75deg, #2648BE 15%, #5B70B8 55%);
+		background-image: url('images/header.svg'), -ms-linear-gradient(75deg, #2648BE 15%, #5B70B8 55%);
+		background-image: url('images/header.svg'), linear-gradient(75deg, #2648BE 15%, #5B70B8 55%);
 	}
 	
 		#header-wrapper:before
