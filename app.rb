@@ -29,7 +29,7 @@ class App < Sinatra::Base
   post '/send' do
     Pony.mail(
       from: "#{params[:email]}",
-      to: "beaugaines@gmail.com",
+      to: "massoma7@yahoo.com",
       subject: "Ensemble Solutions contact from #{params[:name]}",
       body: "#{params[:message]}"
     )
