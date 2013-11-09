@@ -4,6 +4,24 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
+/* ============ */
+/* = My hacks = */
+/* ============ */
+
+	.image-wrapper
+	{
+		position: relative;
+	}
+	
+/*		.image-wrapper .image
+		{
+			position: relative;
+			z-index: 2;
+			width: 70%;
+			margin: 0 auto;
+		}
+*/
 /*********************************************************************************/
 /* Basic                                                                         */
 /*********************************************************************************/
