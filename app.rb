@@ -7,6 +7,11 @@ class App < Sinatra::Base
   set :root, File.dirname(__FILE__)
 
   configure :production do
+
+    # set up caching for Heroku
+    set :static_cache_control, [:public, max_age: 60 * 60 * 24 * 365]
+
+    # Sendgrid config
     Pony.options = {
       :via => :smtp,
       :via_options => {
