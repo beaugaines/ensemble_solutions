@@ -148,7 +148,7 @@
 	}
 
 
-	.image-wrapper img {
+	.image-wrapper img.bio {
 		width: 60% !important;
 		margin: 0 auto 2em !important;
 	}
