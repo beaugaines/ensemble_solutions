@@ -38,33 +38,34 @@
             to build Africa and Cameroon's prospects together! 
         .row
           %section.6u
-            %form{action: "/", method: "post", id: 'formsend'}
-              .row.half
-                .6u
-                  %input.text{name: "name", placeholder: "Name", type: "text"}/
-                .6u
-                  %input.text{name: "email", placeholder: "Email", type: "text"}/
-              .row.half
-                .12u
-                  %textarea{name: "message", placeholder: "Message"}
-              .row.half
-                .12u
-                  %ul.actions
-                    %li
-                      %a.button{href: "#"} Send Message
-                    %li
-                      %a.button{href: "#"} Clear Form
-          %section.6u
-            .row.no-collapse-1
-              %ul.divided.icons.6u
-                %li.icon.icon-twitter
-                  %a{href: "http://www.twitter.com/ensemblesolutions"}
-                    %span.extra> twitter.com/
-                    ensemblesolutions
-                %li.icon.icon-facebook
-                  %a{href: "http://www.facebook.com/ensemblesolutions"}
-                    %span.extra> facebook.com/
-                    ensemblesolutions
+            #form
+              %form{action: "/send", method: "post", id: "formsend"}
+                .row.half
+                  .6u
+                    %input.text{name: "name", placeholder: "Name", type: "text"}/
+                  .6u
+                    %input.text{name: "email", placeholder: "Email", type: "text"}/
+                .row.half
+                  .12u
+                    %textarea{name: "message", placeholder: "Message"}
+                .row.half
+                  .12u
+                    %ul.actions
+                      %li
+                        %a.button{href: "#"} Send Message
+                      %li
+                        %a.button{href: "#"} Clear Form
+            %section.6u
+              .row.no-collapse-1
+                %ul.divided.icons.6u
+                  %li.icon.icon-twitter
+                    %a{href: "http://www.twitter.com/ensemblesolutions"}
+                      %span.extra> twitter.com/
+                      ensemblesolutions
+                  %li.icon.icon-facebook
+                    %a{href: "http://www.facebook.com/ensemblesolutions"}
+                      %span.extra> facebook.com/
+                      ensemblesolutions
       / Copyright
       #copyright.container
         %ul.menu

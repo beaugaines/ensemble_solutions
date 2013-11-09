@@ -62,12 +62,12 @@ skel.init({
 // jquery form submit
 
  $(function() {
-      $('#formsend').submit(function() {
+      $("#formsend").submit(function() {
        $.post(
        $(this).attr('action'),
          $(this).serialize(), 
            function(){
-             $('section#form').html("<h1>Thank you!</h1>");
+             $("div#form").html("<h1>Thank you!</h1>");
             },"text");
       return false;
         });

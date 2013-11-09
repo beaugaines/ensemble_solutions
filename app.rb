@@ -10,12 +10,11 @@ class App < Sinatra::Base
     haml :index
   end
 
-  post '/' do
-    require 'pony'
+  post '/send' do
     Pony.mail(
       from: "#{params[:email]}",
       to: "beaugaines@gmail.com",
-      subject: 'Ensemble Solutions contact',
+      subject: "Ensemble Solutions contact from #{params[:name]}",
       body: "#{params[:message]}",
       port: '587',
       enable_starttls_auto: true,
@@ -24,6 +23,7 @@ class App < Sinatra::Base
       authentication: :plain,
       domain:  'heroku.com'
       )
+    halt 200
   end
 
 run! if app_file == $0
