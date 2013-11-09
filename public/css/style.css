@@ -34,8 +34,13 @@ input.submit {
 	background-color: inherit;
 }
 
-div.form {
+div#form {
 	min-height: 3em;
+}
+
+div#form h1 {
+	text-align: center;
+	font-size: 2em;
 }
 
 /*********************************************************************************/

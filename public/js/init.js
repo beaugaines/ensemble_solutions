@@ -67,7 +67,7 @@ skel.init({
        $(this).attr('action'),
          $(this).serialize(), 
            function(){
-             $("div#form").html("<h1>Thank you!</h1>");
+             $("div#form").html("<h1 class='thanks'>Thank you!</h1>");
             },"text");
       return false;
         });
