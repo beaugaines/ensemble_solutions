@@ -38,22 +38,23 @@
             to build Africa and Cameroon's prospects together! 
         .row
           %section.6u
-            %form{action: "#", method: "post"}
-              .row.half
-                .6u
-                  %input.text{name: "name", placeholder: "Name", type: "text"}/
-                .6u
-                  %input.text{name: "email", placeholder: "Email", type: "text"}/
-              .row.half
-                .12u
-                  %textarea{name: "message", placeholder: "Message"}
-              .row.half
-                .12u
-                  %ul.actions
-                    %li
-                      %a.button{href: "#"} Send Message
-                    %li
-                      %a.button{href: "#"} Clear Form
+            %section#form 
+              %form{action: "#", method: "post", id: 'formsend'}
+                .row.half
+                  .6u
+                    %input.text{name: "name", placeholder: "Name", type: "text"}/
+                  .6u
+                    %input.text{name: "email", placeholder: "Email", type: "text"}/
+                .row.half
+                  .12u
+                    %textarea{name: "message", placeholder: "Message"}
+                .row.half
+                  .12u
+                    %ul.actions
+                      %li
+                        %a.button{href: "#"} Send Message
+                      %li
+                        %a.button{href: "#"} Clear Form
           %section.6u
             .row.no-collapse-1
               %ul.divided.icons.6u
@@ -73,6 +74,6 @@
             Developed by
             %a{href: "http://www.beaugain.es"} Charlie Gaines
           %li
-            Styles from
+            Hat tip to
             %a{href: "http://html5up.net/"} HTML5 UP
 

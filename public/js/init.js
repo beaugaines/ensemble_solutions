@@ -48,13 +48,27 @@ skel.init({
 	}
 });
 
-jQuery(function() {
-	jQuery('#nav > ul').dropotron({ 
-		offsetY: 0,
-		mode: 'fade',
-		speed: 300,
-		alignment: 'center',
-		noOpenerFade: true,
-		detach: false
-	});
-});
+// jQuery(function() {
+// 	jQuery('#nav > ul').dropotron({ 
+// 		offsetY: 0,
+// 		mode: 'fade',
+// 		speed: 300,
+// 		alignment: 'center',
+// 		noOpenerFade: true,
+// 		detach: false
+// 	});
+// });
+
+// jquery form submit
+
+ $(function() {
+      $('#formsend').submit(function() {
+       $.post(
+       $(this).attr('action'),
+         $(this).serialize(), 
+           function(){
+             $('section#form').html("<h1>Thank you!</h1>");
+            },"text");
+      return false;
+        });
+  });

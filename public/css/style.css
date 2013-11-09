@@ -315,7 +315,7 @@
 			form select,
 			form textarea
 			{
-				-webkit-appearance: none;
+				/*-webkit-appearance: none;*/
 				display: block;
 				background: #f3f4f5;
 				border: solid 1px #d2d7dc;
