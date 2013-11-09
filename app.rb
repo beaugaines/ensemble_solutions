@@ -5,11 +5,11 @@ require 'pony'
 
 class App < Sinatra::Base
   set :root, File.dirname(__FILE__)
+  set :haml, format: :html5
+  set :static_cache_control, [:public, max_age: 60 * 60 * 24 * 365]
+
 
   configure :production do
-
-    # set up caching for Heroku
-    set :static_cache_control, [:public, max_age: 60 * 60 * 24 * 365]
 
     # Sendgrid config
     Pony.options = {
@@ -25,7 +25,6 @@ class App < Sinatra::Base
       }
     }
   end
-
 
   get '/' do
     haml :index
