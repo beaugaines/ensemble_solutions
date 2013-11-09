@@ -39,7 +39,7 @@
         .row
           %section.6u
             #form
-              %form{action: "/send", method: "post", id: "formsend"}
+              %form{action: "/send", method: "post", id: "contact-form"}
                 .row.half
                   .6u
                     %input.text{name: "name", placeholder: "Name", type: "text"}/
@@ -52,9 +52,9 @@
                   .12u
                     %ul.actions
                       %li
-                        %a.button{type: 'submit', value: 'Send', id: 'submit'} Send Message
+                        %input.button.submit{type: 'submit', value: 'Send Message', id: 'submit'}
                       %li
-                        %input.button.reset{type: 'reset'}
+                        %input.button.submit{type: 'reset'}
             %section.6u
               .row.no-collapse-1
                 %ul.divided.icons.6u
