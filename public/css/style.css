@@ -42,6 +42,12 @@
 			text-decoration: none;
 		}
 
+	h4.bio
+	{
+		font-size: 1.2em;
+		margin-bottom: 0.5em;
+	}
+
 	a
 	{
 		color: inherit;
@@ -881,7 +887,7 @@
 	.welcome
 	{
 		text-align: center;
-		margin: 0.5em 0;
+		margin-top: 0.5em;
 	}
 
 	.image-wrapper
@@ -989,7 +995,7 @@
 
 	#logo
 	{
-		margin-top: 0.5em;
+		margin-top: 0.9em;
 	}
 	
 		#logo a
