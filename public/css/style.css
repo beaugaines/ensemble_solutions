@@ -165,16 +165,14 @@ ul.menu li {
 		header.major
 		{
 			text-align: center;
+			margin: 0 0 3em 0;
 		}
-
-
 
 	.feature
 	{
 		text-align: center;
 	}
 
-	
 	/* Sections/Articles */
 	
 		section,
@@ -224,7 +222,7 @@ ul.menu li {
 			.image.full
 			{
 				display: block;
-				width: 100%;
+				width: 95%;
 				margin: 0 0 3em 0;
 			}
 			
@@ -937,6 +935,7 @@ ul.menu li {
 	.image-wrapper
 	{
 		position: relative;
+		margin-left: 1em;
 	}
 	
 		.image-wrapper .image

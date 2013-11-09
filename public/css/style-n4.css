@@ -32,6 +32,13 @@
 		font-size: 16pt;
 	}
 
+	p {
+	text-align: center;
+	width: 90%;
+	padding: 0 1em;
+	margin: 0 auto;
+	}
+
 	span.extra
 	{
 		display: inline;
@@ -138,6 +145,12 @@
 	#content
 	{
 		margin-bottom: 3em;
+	}
+
+
+	.image-wrapper img {
+		width: 60% !important;
+		margin: 0 auto 2em !important;
 	}
 
 	.right-sidebar #content

@@ -17,6 +17,11 @@
 			display: none;
 		}
 
+p {
+	width: 95%;
+	margin: 0 auto;
+}
+
 	/* Buttons */
 		
 		.button
@@ -32,6 +37,10 @@
 	.wrapper
 	{
 		padding: 4em 2em 4em 2em;
+	}
+
+	.image-wrapper img {
+		width: 80%;
 	}
 
 	#header-wrapper
