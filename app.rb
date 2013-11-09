@@ -23,7 +23,6 @@ class App < Sinatra::Base
       authentication: :plain,
       domain:  'heroku.com'
       )
-    halt 200
   end
 
 run! if app_file == $0
