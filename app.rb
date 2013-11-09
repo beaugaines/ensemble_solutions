@@ -14,7 +14,7 @@ class App < Sinatra::Base
     require 'pony'
     Pony.mail(
       from: "#{params[:email]}",
-      to: "massoma7@yahoo.com",
+      to: "beaugaines@gmail.com",
       subject: 'Ensemble Solutions contact',
       body: "#{params[:message]}",
       port: '587',
