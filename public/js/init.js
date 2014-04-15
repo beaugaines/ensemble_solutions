@@ -89,8 +89,3 @@ $(function() {
   });
 });
 
-// scroll to top
-
-$(function(){
-  $('#toTop').scrollToTop(1000);
-});
