@@ -19,16 +19,6 @@
 /* = My hacks = */
 /* ============ */
 
-/* scrollup */
-/* Image style */
-#scrollUp {
-	bottom: 20px;
-	right: 20px;
-	height: 38px;  /* Height of image */
-	width: 38px; /* Width of image */
-	background: url(/images/top.png) no-repeat;
-}
-
 /* hide h5ml 5 scrollbar on nav */
 nav {
 	overflow-y: hidden;
