@@ -8,6 +8,7 @@
     /%link{href: "http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600", rel: "stylesheet", type: "text/css"}/
     /[if lte IE 8] <script src="js/html5shiv.js"></script>
     %script{src: "js/jquery.min.js"}
+    %script{src: "js/jquery.scrollToTop.min.js"}
     %script{src: "js/skel.min.js"}
     %script{src: "js/skel-panels.min.js"}
     %script{src: "js/init.js"}
@@ -22,7 +23,7 @@
       #header.container
         / Logo
         %h1#logo
-          %a{href: "index.html"} Ensemble Solutions
+          %a{href: "/"} Ensemble Solutions
       = yield
       
     / Footer Wrapper

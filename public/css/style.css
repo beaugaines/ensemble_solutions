@@ -24,11 +24,12 @@ nav {
 	overflow-y: hidden;
 }
 
-u {
+/*ul {
 	border-bottom: 2px solid #f34848;
 	text-decoration: none;
 	text-align: center;
 }
+*/
 
 input.submit {
 	background-color: inherit;
@@ -49,6 +50,25 @@ div#form h1 {
 
 ul.menu li {
 	display: inline;
+}
+
+/* scroll to top */
+#toTop {
+    display: none;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    width: 64px;
+    height: 64px;
+    background-image: url('http://geniuscarrier.com/images/up.png');
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+#toTop:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
 }
 
 /*********************************************************************************/
